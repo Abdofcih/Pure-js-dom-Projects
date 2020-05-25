@@ -1,0 +1,141 @@
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+  }
+
+* {
+  box-sizing: border-box;
+}
+button:focus{
+  outline: none;
+}
+body {
+  background-color: #f9fafb;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+.toggleBtn{
+  text-align: center;
+  padding-top: 50px;
+}
+.btn{
+  cursor: pointer;
+  background: #1e4c97;
+  transition: all .3s ease-in-out;
+  color: #fff;
+  padding: 10px;
+  font-size: 32px;
+  font-weight: 600;
+  border: none;
+  width: 150px;
+}
+.activeLogin .loginBtnToggle, .activeSignup .signupBtnToggle{
+  box-shadow: 2px 2px 6px 0px inset #000;
+}
+.loginBtnToggle{
+  border-radius: 15px 0 0 15px;
+}
+.signupBtnToggle{
+  border-radius: 0 15px 15px 0;
+}
+.centered {
+  width: 70%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+@media only screen and (min-width: 768px) {
+  .centered {
+    width: 40%;
+  }
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(180deg,#1e4c97,#a13bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+  /*/ Start  Styling From and inputs /*/
+  .form {
+    padding: 30px 40px;
+    display: none;
+  }
+  
+  .form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .form-control label {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .form-control input:focus {
+    outline: 0;
+    border-color: #1e4c97;
+  }
+  
+  .form-control.success input {
+    border-color: var(--success-color);
+  }
+  
+  .form-control.error input {
+    border-color: var(--error-color);
+  }
+  
+  .form-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+  }
+  
+  .form-control.error small {
+    visibility: visible;
+  }
+  
+  .form button {
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(100deg,#1e4c97,#6f23b6);
+    transition: all .3s ease-in-out;
+    color: #fff;
+    padding: 10px 80px;
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+    display: block;
+    width: 100%;
+  }
+  .form button:hover{
+    background: linear-gradient(100deg,#6f23b6,#1e4c97);
+    transform: translateY(-4px);  
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.7);
+  }
+/*/ finish  Styling From and inputs /*/
+
+.centered.activeLogin .loginForm{
+    display: block;
+}
+.centered.activeSignup .signupFrom{
+    display: block;
+}
