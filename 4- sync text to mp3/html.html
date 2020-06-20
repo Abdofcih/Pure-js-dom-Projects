@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <link rel="shortcut icon" href="assets/icons/play.svg" type="image/x-icon">
+    <title>Sync text to mp3</title>
+</head>
+<body>
+    <div class="centered">
+        <p id="subtitles">
+
+        </p>
+
+    </div>
+    <div class="audioSection">
+        <audio id="audiofile" src="assets/blind and disabled people.mp3" ></audio>
+        <div class="customeControl" id="customeControl">
+          <img class="play" id="play" src="assets/icons/play.svg" alt="play" width="25" >
+          <img class="pause" id="pause" src="assets/icons/pause.svg" alt="play" width="25">
+          <div class="progress-bar" id="progress-bar">
+              <div class="progress" id="progress"></div>
+          </div>
+          <div class="time" id="time">00:00</div>
+        </div>
+     </div>
+    <script src="subtitle.js"></script>
+    <script src="mp3.js"></script>
+</body>
+</html>
