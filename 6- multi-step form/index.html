@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link rel="stylesheet" href="css.css">
+    <title>JS Slider</title>
+</head>
+<body>
+    <div class="progress">
+        <div id="step-number-0" class="step-number">1</div>
+        <div class="line"></div>
+        <div id="step-number-1" class="step-number">2</div>
+        <div class="line"></div>
+        <div id="step-number-2" class="step-number">3</div>
+    </div>
+    <div class="form-container">
+        <form  id="form" method="post">
+         <div id="form-parts" class="form-parts">
+            <div class="form-part form-part-1">
+                <h2 >Your Information</h2>
+                <input type="text" placeholder="Name" name="name">
+               <input type="text"  placeholder="Email" name="email">
+            </div>
+            <div class="form-part form-part-2">
+                <h2 >Rate Instructor</h2>
+                <input id="rate-inst-0" type="radio" name="rate-instructor" value="0">
+                <label for="rate-inst-0">0</label>
+                <input id="rate-inst-1" type="radio" name="rate-instructor" value="1">
+                <label for="rate-inst-1">1</label>
+                <input id="rate-inst-2" type="radio" name="rate-instructor" value="2">
+                <label for="rate-inst-2">2</label>
+                <input id="rate-inst-3" type="radio" name="rate-instructor" value="3">
+                <label for="rate-inst-3">3</label>
+                <input id="rate-inst-4" type="radio" name="rate-instructor" value="4">
+                <label for="rate-inst-4">4</label>
+                <input id="rate-inst-5" type="radio" name="rate-instructor" value="5">
+                <label for="rate-inst-5">5</label>
+                <h2 >Rate Content</h2>
+                <input id="rate-content-0" type="radio" name="rate-content" value="0">
+                <label for="rate-content-0">0</label>
+                <input id="rate-content-1" type="radio" name="rate-content" value="1">
+                <label for="rate-content-1">1</label>
+                <input id="rate-content-2" type="radio" name="rate-content" value="2">
+                <label for="rate-content-2">2</label>
+                <input id="rate-content-3" type="radio" name="rate-content" value="3">
+                <label for="rate-content-3">3</label>
+                <input id="rate-content-4" type="radio" name="rate-content" value="4">
+                <label for="rate-content-4">4</label>
+                <input id="rate-content-5" type="radio" name="rate-content" value="5">
+                <label for="rate-content-5">5</label>
+            </div>
+            <div class="form-part form-part-3">
+                <h2 >Any Feedback</h2>
+               <input type="text" name="feedback" placeholder="Feedback">
+               <button type="submit" class="btn btn-submit pageclip-form__submit" >Submit</button>
+            </div>
+         </div>
+        </form>
+    
+    </div>
+    <div class="btn-controllers">
+        <button id="btn-next" class="btn btn-next">Next &gt;</button>
+        <button id="btn-prev" class="btn btn-prev">&lt; Previuse</button>
+    </div>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <script src="js.js"></script>
+</body>
+</html>

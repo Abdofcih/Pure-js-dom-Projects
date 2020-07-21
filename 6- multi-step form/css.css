@@ -1,0 +1,122 @@
+:root{
+    --content-width:500px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h2{
+    margin: 10px 0;
+    color: #ff5e01;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn{
+   padding: 15px 10px;
+   border: none;
+   box-shadow: 4px 4px 10px 0px #f89962;
+   color: #ffffff;
+   background-color: #ff5e01;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: transform 0.2s ease-in-out;
+}
+.btn:hover{
+    transform: scaleX(1.2);
+}
+.btn:focus , input:focus{
+    outline: none;
+}
+
+body{
+    background-color: #d3d3d3;
+}
+.progress{
+    display: flex;
+    align-items: center;
+    width: var(--content-width);
+    margin: 30px auto;
+}
+.progress .step-number{
+    padding: 5px;
+    width: 10%;
+    text-align: center;
+    background-color: #ffffff;
+    color: #ff5e01;
+    border: 2px solid #ff5e01;
+    z-index: 9;
+    transition: 0.6s ease-in-out;
+}
+.progress .step-number.active{
+    background-color: #ff5e01;
+    color: #ffffff;
+}
+.progress .step-number.active + .line{
+    background-color: #ff5e01;
+}
+.progress .line{
+    width: 35%;
+    background-color: #ffffff;
+    height: 10px;
+    border-top: 2px solid #ff5e01;
+    border-bottom: 2px solid #ff5e01;
+    transform: scaleX(1.023);
+    z-index: 10;
+    transition: 0.6s ease-in-out;
+}
+
+form{ 
+    width: var(--content-width);
+    margin: 50px auto;
+    overflow-x: hidden;
+}
+.form-parts{
+    width: 300%;
+    display: flex;
+    transition: 0.3s ease-in-out;
+}
+.form-parts-left-0{margin-left: 0;}
+.form-parts-left-1{margin-left: -100%;}
+.form-parts-left-2{margin-left: -200%;}
+.form-part{
+width: 33.33%;
+margin: 10px;
+}
+input[type="text"]{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 2px solid #ff5e01;
+}
+input[type="radio"]{
+   display: none; 
+}
+input[type="radio"] +label{
+    cursor: pointer;
+    color: #ff5e01;
+    font-weight: 900;
+    border:1px solid #ff5e01;
+    padding: 5px 10px;
+    transition: 0.5s ease-in-out;
+}
+input[type="radio"] +label:hover ,
+input[type="radio"]:checked +label{
+    color: #ffffff;
+    background-color: #ff5e01;
+}
+
+.btn-controllers{
+    width: var(--content-width);
+    margin: 50px auto;
+    padding: 10px 0 ;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-controllers button{
+    background-color: #ff5e01d4;
+}
+.btn-controllers button:hover{
+    background-color: #ff5e01;
+}
