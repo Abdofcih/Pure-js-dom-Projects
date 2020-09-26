@@ -122,6 +122,7 @@
   .quiz-app .bullets .spans span.good {
     background-color: #01c565;
   }
+  .countdown{color:#fff}
   .quiz-app .results{
     text-align: center;
     font-size: 24px;
