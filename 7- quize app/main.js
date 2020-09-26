@@ -68,6 +68,7 @@ function createBullets(number){
 
 //------------
 function addData(index){
+    clearInterval(countDownInterval)
     countDown(10)
       let obj = questions[index]
       let questionHeadEl = document.createElement('h2')
