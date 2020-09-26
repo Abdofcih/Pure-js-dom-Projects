@@ -1,0 +1,26 @@
+[
+ {
+    "title": "25 + 5 * 2",
+    "answer_1": "60",
+    "answer_2": "30",
+    "answer_3": "35",
+    "answer_4": "40",
+    "right_answer": "35"
+ },
+ {
+    "title": "30 / 5 + 5 * 5",
+    "answer_1": "55",
+    "answer_2": "51",
+    "answer_3": "35",
+    "answer_4": "31",
+    "right_answer": "31"
+ },
+ {
+    "title": "51 / 3 + 2 * 5 + 3",
+    "answer_1": "60",
+    "answer_2": "30",
+    "answer_3": "35",
+    "answer_4": "40",
+    "right_answer": "30"
+ }
+]
