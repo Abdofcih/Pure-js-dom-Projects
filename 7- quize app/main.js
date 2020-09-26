@@ -159,20 +159,20 @@ function showResult(){
 }
 
 function countDown(duration){
-    //   let minutes, seconds;
-    //   countDownInterval = setInterval(()=>{
-    //   minutes = parseInt(duration/60);
-    //   seconds = parseInt(duration%60);
+      let minutes, seconds;
+      countDownInterval = setInterval(()=>{
+      minutes = parseInt(duration/60);
+      seconds = parseInt(duration%60);
 
-    //   minutes = minutes < 10 ? `0${minutes}` : minutes;
-    //   seconds = seconds < 10 ? `0${seconds}` : seconds;
+      minutes = minutes < 10 ? `0${minutes}` : minutes;
+      seconds = seconds < 10 ? `0${seconds}` : seconds;
 
-    //   countdownEl.innerHTML = `${minutes} : ${seconds}`
+      countdownEl.innerHTML = `${minutes} : ${seconds}`
      
-    //   if(--duration<0){
-    //       clearInterval(countDownInterval)
-    //       submitBtn.click()
-    //       console.log("finished")
-    //   }
-    // },1000)
+      if(--duration<0){
+          clearInterval(countDownInterval)
+          submitBtn.click()
+          console.log("finished")
+      }
+    },1000)
 }
